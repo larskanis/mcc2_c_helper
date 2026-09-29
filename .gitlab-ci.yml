@@ -1,0 +1,23 @@
+.job_template: &job_definition
+  variables:
+    MAKE: make -j6
+
+  script:
+    - bundle install
+    - bundle exec rake compile test TESTOPTS=-v
+
+test-3.0:
+  <<: *job_definition
+  image: comcard/ruby:3.0
+
+test-latest:
+  <<: *job_definition
+  image: comcard/ruby:latest
+
+test-windows-latest:
+  <<: *job_definition
+  image: comcard/ruby:latest
+  tags:
+    - windows
+  before_script:
+    - ridk enable
