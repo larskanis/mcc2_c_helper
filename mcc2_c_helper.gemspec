@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.extensions = ["ext/mcc2_c_helper/extconf.rb"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "ffi-compiler", "~> 1.0"
+  # spec.add_dependency "ffi-compiler", "~> 1.0"
 end
 # frozen_string_literal: true
