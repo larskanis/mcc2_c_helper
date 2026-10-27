@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "mcc2_c_helper"
   spec.version = Mcc2CHelper::VERSION
   spec.authors = ["Lars Kanis"]
-  spec.email = ["lars.kanis@sincnovation.com"]
+  spec.email = ["lars@greiz-reinsdorf.de"]
 
   spec.summary = "Some helper functions for fast image data processing"
   spec.description = "Some helper functions for fast image data processing."
