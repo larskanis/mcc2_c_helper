@@ -10,13 +10,9 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Some helper functions for fast image data processing"
   spec.description = "Some helper functions for fast image data processing."
-  # spec.homepage = "https://"
+  spec.homepage = "https://github.com/larskanis/mcc2_c_helper"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.4"
-
-  spec.metadata["allowed_push_host"] = "https://ccgems"
-  # spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -31,8 +27,4 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.extensions = ["ext/mcc2_c_helper/extconf.rb"]
-
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "ffi-compiler", "~> 1.0"
 end
-# frozen_string_literal: true
